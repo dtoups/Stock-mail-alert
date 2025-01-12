@@ -21,9 +21,8 @@ def mail_alert(message):
 
 
 def tracking_main(stocks):
-    print(datetime.datetime.now())
-    stock_list = [stocks_object.StockObject(stock) for stock in stocks]
-    day = datetime.date.today()
+    stock_list  = [stocks_object.StockObject(stock) for stock in stocks]
+    day         = datetime.date.today()
 
     while True:
         print(f"\n{datetime.datetime.now()}")
