@@ -50,8 +50,8 @@ def track_single(stock):
     # print("{:.2f}".format(round(percentage, 2)))
 
     if percentage >= 1.05:
-        mail_text = f"{stock.full_name} is up by {percentage}% from {stock.last_close} to {stock.get_current_price()}"
-        msg = 'Subject: {}\n\n{}'.format(f"Major GAIN for {stock.full_name}", mail_text)
+        mail_text   = f"{stock.full_name} is up by {percentage}% from {stock.last_close} to {stock.get_current_price()}"
+        msg         = 'Subject: {}\n\n{}'.format(f"Major GAIN for {stock.full_name}", mail_text)
         mail_alert(msg)
         return stock
 
@@ -66,3 +66,4 @@ def track_single(stock):
 
 if __name__ == '__main__':
     tracking_main(STOCKS_TO_WATCH)
+
