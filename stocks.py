@@ -25,8 +25,6 @@ def tracking_main(stocks):
     day         = datetime.date.today()
 
     while True:
-        print(f"\n{datetime.datetime.now()}")
-
         for stock in stock_list:
             if not stock.ignore:
                 # Tracking
